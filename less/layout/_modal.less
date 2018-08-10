@@ -1,0 +1,106 @@
+.modal {
+  .modal-dialog {
+    height: 100vh;
+    max-width: 370px;
+    margin: 0 auto;
+    .flex-center();
+    border: none;
+  }
+  .modal-body {
+    background-color: white;
+    padding: 0;
+  }
+  .modal-content {
+    border: 1px solid #ededed;
+    background-color: #ffffff;
+    padding: 0 30px 40px;
+    margin-top: 85px;
+    position: relative;
+    &:before {
+      content: '';
+      .size(368px, 43px);
+      max-width: 100%;
+      position: absolute;
+      top: -85px;
+      left: 0;
+      background: url("../img/modal-logo.png");
+    }
+  }
+  .modal-header {
+    border: 0;
+    justify-content: center;
+    padding: 0;
+  }
+  .close {
+    position: absolute;
+    right: 13px;
+    top: 11px;
+    .opacity(0.5);
+    color: @black;
+    font-size: 16px;
+    font-weight: 300;
+    transition: opacity .2s;
+  }
+  .modal-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 40px;
+  }
+  .text {
+    margin-bottom: 25px;
+    color: @gray;
+  }
+  .btn-blue {
+    margin: 15px 0 12px;
+    width: 100%;
+    padding: 13px;
+    transition: all .2s;
+    cursor: pointer;
+  }
+  .sign-in {
+    color: @gray;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    a {
+      color: @blue;
+    }
+  }
+  @media all and (max-width: 768px) {
+    .modal-dialog{
+      height: unset;
+      min-height: 100vh;
+    }
+    .modal-content{
+      margin-top: 0;
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+
+.modal-backdrop {
+  background-color: #fafbfb;
+  &.show {
+    .opacity(1);
+  }
+}
+
+.modal-vertical-center {
+  text-align: center;
+  padding: 0 !important;
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+  }
+  .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+  }
+}

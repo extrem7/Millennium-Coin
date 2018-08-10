@@ -1,0 +1,44 @@
+.footer {
+  background: url("../img/main-background.png") no-repeat center center;
+  .grayscale(60);
+  background-size: cover;
+  padding: 70px 0;
+  color: white;
+  &--gray {
+    background-image: url("../img/main-background-gray.png")
+  }
+  .container {
+    padding: 0 85px;
+  }
+  &-logo {
+    margin-right: 20px;
+  }
+  &-menu {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 440px;
+    li {
+      margin-right: 30px;
+    }
+  }
+  @media all and (max-width: 1200px) {
+    .container {
+      padding: 0 15px;
+    }
+
+    &-menu {
+      li {
+        margin-right: 12px;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    text-align: center;
+    &-menu {
+      margin-bottom: 25px;
+      li {
+        margin: 0 auto;
+      }
+    }
+  }
+}

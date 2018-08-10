@@ -1,0 +1,88 @@
+.custom-form {
+  &--noborder {
+    input, textarea, select {
+      border: none !important;
+    }
+  }
+  input:not([type=checkbox]), textarea, select, output {
+    .border-radius(5px);
+    border: 1px solid #e0e0e0;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+    &::-webkit-input-placeholder {
+      color: #9c9c9c;
+    }
+    &:-moz-placeholder {
+      color: #9c9c9c;
+    }
+    &::-moz-placeholder {
+      color: #9c9c9c;
+    }
+    &:-ms-input-placeholder {
+      color: #9c9c9c;
+    }
+  }
+  input:not([type=checkbox]), select, output {
+    padding-left: 16px;
+    height: 55px;
+  }
+  output {
+    display: flex;
+    align-items: center;
+    color: #525252;
+  }
+  select {
+    color: #525252;
+    outline: none;
+  }
+  textarea {
+    padding: 22px 15px !important;
+  }
+  label {
+    position: relative;
+    width: 100%;
+    margin: 0 0 15px;
+    padding: 0;
+    color: #3e3e3e;
+    input, textarea, output {
+      margin-bottom: 0 !important;
+      &.has-label {
+        transition: padding-top .2s;
+        &:not(:placeholder-shown) {
+          padding-top: 15px;
+          & + .hidden-label {
+            .opacity(1);
+          }
+        }
+      }
+    }
+  }
+  .hidden-label {
+    font-size: 12px;
+    position: absolute;
+    left: 16px;
+    top: 10px;
+    .opacity(0);
+    transition: opacity 0.2s;
+  }
+  .show-password {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    .size(18px, 11px);
+    background: url("../img/show-pass.png");
+    cursor: pointer;
+  }
+  .checkbox-block {
+    color: @gray;
+    font-size: 14px;
+    line-height: 16px;
+    input {
+      margin-right: 8px;
+    }
+    a {
+      color: @blue;
+    }
+  }
+}

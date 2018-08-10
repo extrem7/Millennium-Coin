@@ -1,0 +1,92 @@
+.main {
+  padding: 15px 0 75px;
+  .container {
+    padding: 0 85px;
+  }
+  .section-title {
+    margin-bottom: 10px;
+  }
+  .links {
+    margin-top: 30px;
+  }
+  .hover {
+    margin-left: 30px;
+  }
+}
+
+.profits {
+  padding-bottom: 70px;
+  background: url("../img/calculator-background.png") no-repeat bottom center;
+  background-size: cover;
+  .text-center {
+    margin-bottom: 35px;
+  }
+  .container {
+    padding: 0 85px;
+  }
+  .marked-list {
+    margin-bottom: 15px;
+  }
+  .btn-blue {
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 335px;
+  }
+}
+
+.partners-structure {
+  padding-bottom: 60px;
+  .structure {
+    margin: 40px auto 0;
+    padding-bottom: 18px;
+    max-width: 360px;
+    .box-shadow(0 0 10px rgba(0, 0, 0, 0.15));
+    .border-radius(5px);
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    text-align: center;
+    &-title {
+      color: #424242;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 15px 0;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    &-body {
+      color: #424242;
+      text-transform: uppercase;
+      padding: 20px 0;
+      .percents {
+        padding-top: 6px;
+        display: block;
+        color: @blue;
+        font-size: 24px;
+        font-weight: 600;
+      }
+    }
+    &-footer {
+      color: #aeaeae;
+      font-size: 12px;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .main, .profits {
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+ .main{
+   img{
+     display: none;
+   }
+   .hover{
+     margin: 0;
+   }
+ }
+}

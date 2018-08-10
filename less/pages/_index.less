@@ -1,0 +1,229 @@
+.main {
+  min-height: 750px;
+  background: url("../img/main-background.png") no-repeat center center;
+  background-size: cover;
+  .header{
+    background: transparent;
+    min-height: unset;
+    padding-bottom: 0;
+  }
+  .content {
+    padding-top: 130px;
+    .section-title {
+      padding-bottom: 15px;
+    }
+    .text {
+      margin-bottom: 25px;
+    }
+    .button {
+      margin: 0 12px;
+    }
+    .hover {
+      color: white !important;
+    }
+  }
+}
+
+.about {
+  background-color: #f1f1f1;
+  padding-bottom: 80px;
+  position: relative;
+
+  .text {
+    margin: 20px 0 42px;
+  }
+  .hover {
+    margin-left: 30px;
+  }
+  .mac {
+    background: url("../img/about-mac.png") no-repeat center center;
+    background-size: 100%;
+    max-width: 1108px;
+    width: 78vw;
+    height: 48vw;
+    max-height: 652px;
+    position: absolute;
+    right: -282px;
+    bottom: 0;
+  }
+}
+
+.mac-overflow{
+  overflow: hidden;
+}
+
+.investing-offers {
+  padding-bottom: 50px;
+  .text {
+    margin-bottom: 40px;
+  }
+  .more-offers {
+    margin-top: 30px;
+    text-align: center;
+    .button {
+      padding: 16px 30px;
+      width: 360px;
+      margin-bottom: 12px;
+    }
+    p {
+      text-align: center;
+      span {
+        color: #10cb6c;
+      }
+    }
+  }
+}
+
+.calculator {
+  padding-bottom: 70px;
+  background: url("../img/calculator-background.png") no-repeat bottom center;
+  background-size: cover;
+  .calculator-block {
+    margin-top: 55px;
+    .box-shadow(0 0 10px rgba(0, 0, 0, 0.15));
+    .border-radius(5px);
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+  }
+  label {
+    width: 169px;
+    color: #b0b0b0;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    input, select {
+      .size(100%, 38px);
+      .border-radius(5px);
+      color: #373737;
+      font-weight: 600;
+      padding-left: 20px;
+      margin-top: 6px;
+    }
+  }
+  .input-block, .select-block {
+    input, select {
+      border: 1px solid @blue;
+    }
+  }
+  .input-block {
+    &:after {
+      content: '₽';
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+      color: #636363;
+      font-family: "Myriad Pro", "Open Sans", sans-serif;
+    }
+  }
+  .disabled-block {
+    input {
+      font-size: 24px;
+      padding-left: 0;
+      background-color: transparent;
+    }
+  }
+  .vertical-line {
+    .size(1px, 136px);
+    background-color: #e1e1e1;
+  }
+}
+
+.right-now {
+  background: url("../img/right-now-background.png") no-repeat center center;
+  background-size: cover;
+}
+
+.partners {
+  padding: 15px 0 75px;
+  .container {
+    padding: 0 85px;
+  }
+  .section-title {
+    margin-bottom: 10px;
+  }
+  .links {
+    margin-top: 30px;
+  }
+  .hover {
+    margin-left: 30px;
+  }
+  ul {
+    padding-left: 30px;
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .partners {
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .calculator {
+    .disabled-block {
+      width: 90px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .main {
+    min-height: unset;
+    .content {
+      padding: 35px 0;
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .about {
+    .mac {
+      display: none;
+    }
+  }
+
+  .calculator {
+    .calculator-block {
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .vertical-line {
+      display: none;
+    }
+    .disabled-block {
+      margin: 15px 30px;
+    }
+  }
+
+  .partners{
+    ul{
+      margin-top: 35px;
+    }
+  }
+}
+
+@media all and (max-width: 576px) {
+  .main{
+    .content{
+      .button{
+        margin: 0 0 15px;
+      }
+    }
+  }
+.about{
+  .hover{
+    margin: 0;
+  }
+}
+  .investing-offers {
+    .more-offers {
+      .button {
+        width: 270px;
+      }
+    }
+  }
+}

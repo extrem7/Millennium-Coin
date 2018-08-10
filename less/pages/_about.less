@@ -1,0 +1,176 @@
+.main {
+  padding: 15px 0 75px;
+  .container {
+    padding: 0 85px;
+  }
+  .section-title {
+    margin-bottom: 30px;
+    padding-top: 50px;
+    text-align: left;
+  }
+  .text {
+    color: #666666;
+  }
+  .certificate-block {
+    padding-top: 100px;
+  }
+  .certificate-info {
+    color: #666666;
+    font-size: 10px;
+    padding: 15px 0;
+  }
+  .button {
+    width: 100%;
+    max-width: 270px;
+  }
+}
+
+.platform-count {
+  background: url("../img/calculator-background.png") no-repeat bottom center;
+  background-size: cover;
+  padding: 60px 0;
+  text-align: center;
+  .count {
+    color: @blue;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .text {
+    font-size: 18px;
+  }
+}
+
+.roadmap {
+  padding-bottom: 70px;
+  .map {
+    position: relative;
+    margin: 50px auto 0;
+    width: 650px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 180px;
+      top: 5px;
+      width: 2px;
+      height: 100%;
+      background-color: #4262c1;
+    }
+  }
+  .pin {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 650px;
+    margin: 50px auto;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 120px;
+      top: 13px;
+      .size(47px, 1px);
+      background-color: fade(#a9b1bb, 50%);
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      .size(17px);
+      .border-radius(50%);
+      background: url("../img/map-pin.png") white;
+      left: 173px;
+      top: 5px;
+    }
+    &--big {
+      &:before {
+        width: 40px;
+      }
+      &:after {
+        .size(31px);
+        background-image: url("../img/map-pin-big.png");
+        left: 166px;
+        top: -2px;
+      }
+    }
+    &--future {
+      &:after {
+        background: white;
+        border: 2px solid #a3abb6;
+      }
+    }
+    &--last .right {
+      position: relative;
+      &:after {
+        content: '';
+        background-color: #f9f9f9;
+        border-right: 2px dashed #a3abb6;
+        position: absolute;
+        left: -50px;
+        height: 132%;
+        top: 23px;
+      }
+    }
+  }
+  .left {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .right {
+    width: 420px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: 700;
+
+  }
+  .text {
+    color: @gray;
+  }
+}
+
+.profits:not(.profits--white) {
+  background: url("../img/calculator-background.png") no-repeat bottom center;
+  background-size: cover;
+}
+
+.profits--white {
+  .btn-blue {
+    display: block;
+    margin: 20px auto 0;
+    width: 100%;
+    max-width: 335px;
+  }
+}
+
+@media all and (max-width: 991px) {
+  .main {
+    .container {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .roadmap {
+    .map {
+      width: 100%;
+      max-width: 320px;
+      &:before {
+        display: none;
+      }
+    }
+    .pin {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      &:before, &:after {
+        display: none;
+      }
+      .right {
+        width: auto;
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+}
