@@ -52,13 +52,13 @@ function piggy() {
 
 function bannerForm() {
     $('.banner-form select').change(function (e) {
-        let html = $(this).find('option:selected').attr('data-html'),
-            bb = $(this).find('option:selected').attr('data-bb'),
-            url = $(this).val();
+        let url = $(this).val(),
+            tab = $($(this).find('option:selected').attr('data-target'));
+
+        $('.form-tab.active').fadeOut(function () {
+            tab.fadeIn().addClass('active');
+        }).removeClass('active');
         $('.banner-form img').attr('src', url);
-        $('.banner-form #html').val(html);
-        $('.banner-form #bb').val(bb);
-        $('.banner-form #url').val(url);
     });
 }
 

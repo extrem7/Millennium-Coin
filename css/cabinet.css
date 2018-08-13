@@ -3352,6 +3352,12 @@ body {
 .partner-page .banner-form .banner img {
   max-width: 100%;
 }
+.partner-page .banner-form .form-tab {
+  display: none;
+}
+.partner-page .banner-form .form-tab.active {
+  display: block;
+}
 .partner-page .banner-form textarea {
   background-color: white;
 }

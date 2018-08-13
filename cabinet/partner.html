@@ -121,31 +121,66 @@
                         <label>
                             РАЗМЕР
                             <select>
-                                <option data-html="html-1" data-bb="bb-1" value="" selected disabled>Выберите размер баннера</option>
-                                <option data-html="html-2" data-bb="bb-2" value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/28d94138776105.576e7fa4ee470.gif">
+                                <option value="" selected disabled>Выберите размер
+                                    баннера
+                                </option>
+                                <option data-target="#tab-1"
+                                        value="https://mir-s3-cdn-cf.behance.net/project_modules/disp/28d94138776105.576e7fa4ee470.gif">
                                     GIF баннер (размер: 728х90px)
                                 </option>
-                                <option data-html="html-3" data-bb="bb-3" value="http://www.egraphix.co.uk/wp/wp-content/uploads/2014/10/300x200-advertising-banner1.gif">
+                                <option data-target="#tab-2"
+                                        value="http://www.egraphix.co.uk/wp/wp-content/uploads/2014/10/300x200-advertising-banner1.gif">
                                     GIF баннер (размер: 728х90px)
                                 </option>
-                                <option data-html="html-4" data-bb="bb-4" value="https://vignette.wikia.nocookie.net/thebannersaga/images/1/14/%D0%A4%D0%BE%D0%BB%D1%8C%D0%BA%D0%B0_%28%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%B0%29.gif/revision/latest?cb=20160321162359&path-prefix=ru">
+                                <option data-target="#tab-3"
+                                        value="https://vignette.wikia.nocookie.net/thebannersaga/images/1/14/%D0%A4%D0%BE%D0%BB%D1%8C%D0%BA%D0%B0_%28%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D1%86%D0%B8%D1%8F_%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%D0%B0%29.gif/revision/latest?cb=20160321162359&path-prefix=ru">
                                     GIF баннер
                                     (размер: 728х90px)
                                 </option>
                             </select>
                         </label>
-                        <label>
-                            HTML
-                            <textarea id="html" disabled></textarea>
-                        </label>
-                        <label>
-                            BB КОД
-                            <textarea id="bb" disabled></textarea>
-                        </label>
-                        <label>
-                            URL
-                            <textarea id="url" disabled></textarea>
-                        </label>
+                        <div id="tab-1" class="form-tab active">
+                            <label>
+                                HTML
+                                <textarea disabled>1</textarea>
+                            </label>
+                            <label>
+                                BB КОД
+                                <textarea disabled>1</textarea>
+                            </label>
+                            <label>
+                                URL
+                                <textarea disabled>1</textarea>
+                            </label>
+                        </div>
+                        <div id="tab-2" class="form-tab">
+                            <label>
+                                HTML
+                                <textarea disabled>2</textarea>
+                            </label>
+                            <label>
+                                BB КОД
+                                <textarea disabled>2</textarea>
+                            </label>
+                            <label>
+                                URL
+                                <textarea disabled>2</textarea>
+                            </label>
+                        </div>
+                        <div id="tab-3" class="form-tab">
+                            <label>
+                                HTML
+                                <textarea disabled>3</textarea>
+                            </label>
+                            <label>
+                                BB КОД
+                                <textarea disabled>3</textarea>
+                            </label>
+                            <label>
+                                URL
+                                <textarea disabled>3</textarea>
+                            </label>
+                        </div>
                     </div>
                     <div class="preview">
                         <label>ПРЕВЬЮ</label>
